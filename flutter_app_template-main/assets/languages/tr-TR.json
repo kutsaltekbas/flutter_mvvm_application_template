@@ -1,0 +1,24 @@
+{
+    "something_went_wrong": "Bir şeyler yanlış gitti",
+    "on_board": {
+        "welcome": "Hoş Geldiniz"
+    },
+    "login": {
+        "welcome": "Hoş Geldiniz",
+        "description": "Lütfen size verilen kullanıcı adını girerek sisteme giriş yapınız.",
+        "email": "E-posta",
+        "password": "Şifre",
+        "login": "Giriş Yap",
+        "forgot_password": "Şifreni mi unuttun?",
+        "dont_have_account": "Hesabın yok mu? ",
+        "register_here": "Kayıt Ol",
+        "register": "Kayıt Ol",
+        "enter_valid_email": "Lütfen geçerli bir e-posta giriniz",
+        "email_required": "E-posta gereklidir.",
+        "password_required": "Lütfen bir şifre giriniz",
+        "logout": "Çıkış Yap"
+    },
+    "home": {
+        "appbar_title": "App Name"
+    }
+}

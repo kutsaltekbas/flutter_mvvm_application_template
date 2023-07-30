@@ -1,0 +1,44 @@
+name: flutter_mvvm_app_template
+description: A Flutter application template that uses state management techniques like MobX, Provider.
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  cupertino_icons: ^1.0.2
+  json_annotation: ^4.8.0
+  vexana: ^3.4.1
+  mobx: ^2.1.4
+  flutter_mobx: ^2.0.6+5
+  provider: ^6.0.5
+  easy_localization: ^3.0.1
+  auto_route: ^7.7.1
+  auto_route_generator: ^7.2.0 
+  mobx_codegen: ^2.1.1
+  dio: ^5.1.1
+  flutter_screenutil: ^5.7.0
+  build_runner: ^2.3.3
+  json_serializable: ^6.6.1
+  flutter_form_builder: ^9.1.0
+  flutter_svg: ^2.0.5
+  form_builder_validators: ^9.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/languages/
+    - assets/images/
