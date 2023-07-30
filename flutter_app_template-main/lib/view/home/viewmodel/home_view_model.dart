@@ -18,4 +18,6 @@ abstract class _HomeViewModelBase with Store, BaseViewModel {
   void changeIsLoading() {
     isLoading = !isLoading;
   }
+
+ 
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../app_theme.dart';
 
@@ -24,12 +25,12 @@ class AppThemeLight extends AppTheme {
 
   ColorScheme get _colorSchemeLight => const ColorScheme(
         brightness: Brightness.light,
-        primary: Color(0xff1779d3), //
-        primaryContainer: Color(0xffffbb54), //
-        secondary: Color(0xffE7912D), //
-        onSecondary: Color(0xffffffff),
-        onPrimary: Color(0xffffffff), //
-        background: Color(0xffF7F9FC), //
+        primary: Color(0xffffffff), //
+        primaryContainer: Color(0xffB56576), //
+        secondary: Color(0xff6D597A), //
+        onSecondary: Color(0xffE56B6F),
+        onPrimary: Color(0xffEAAC8B), //
+        background: Color(0xff355070), //
         onBackground: Color(0xff0F1729), //
         error: Color(0xffff5656), //
         errorContainer: Color(0xFFFFA41D), //
@@ -49,73 +50,74 @@ class AppThemeLight extends AppTheme {
         onInverseSurface: Color(0xffececec),
       );
 
-  TimePickerThemeData get _timePickerTheme => TimePickerThemeData(backgroundColor: _colorSchemeLight.onSecondary);
+  TimePickerThemeData get _timePickerTheme =>
+      TimePickerThemeData(backgroundColor: _colorSchemeLight.onSecondary);
   /* Text Theme For The App */
 
   TextTheme get _textThemeLight => TextTheme(
-        displayLarge: TextStyle(
+        displayLarge: GoogleFonts.poppins(
           fontSize: 32.sp,
-          fontWeight: FontWeight.w400,
+          fontWeight: FontWeight.bold,
           letterSpacing: -0.5,
           color: _colorSchemeLight.onBackground,
         ),
-        displayMedium: TextStyle(
+        displayMedium: GoogleFonts.poppins(
           fontSize: 28.sp,
           fontWeight: FontWeight.w400,
           letterSpacing: -0.5,
           color: _colorSchemeLight.onBackground,
         ),
-        displaySmall: TextStyle(
+        displaySmall: GoogleFonts.poppins(
           fontSize: 24.sp,
           fontWeight: FontWeight.w400,
           color: _colorSchemeLight.onBackground,
         ),
-        headlineLarge: TextStyle(
+        headlineLarge: GoogleFonts.poppins(
           fontSize: 18.sp,
           fontWeight: FontWeight.w500,
           color: _colorSchemeLight.onBackground,
         ),
-        headlineMedium: TextStyle(
+        headlineMedium: GoogleFonts.poppins(
           fontSize: 16.sp,
           fontWeight: FontWeight.w500,
           color: _colorSchemeLight.onBackground,
         ),
-        headlineSmall: TextStyle(
+        headlineSmall: GoogleFonts.poppins(
           fontSize: 14.sp,
           fontWeight: FontWeight.w500,
           color: _colorSchemeLight.onBackground,
         ),
-        labelLarge: TextStyle(
+        labelLarge: GoogleFonts.poppins(
           fontSize: 18.sp,
           fontWeight: FontWeight.w400,
           color: _colorSchemeLight.onBackground,
         ),
-        labelMedium: TextStyle(
+        labelMedium: GoogleFonts.poppins(
           fontSize: 15.sp,
           fontWeight: FontWeight.w500,
           color: _colorSchemeLight.onBackground,
         ),
-        labelSmall: TextStyle(
+        labelSmall: GoogleFonts.poppins(
           fontSize: 12.sp,
           fontWeight: FontWeight.w500,
           color: _colorSchemeLight.onBackground,
         ),
-        bodyLarge: TextStyle(
+        bodyLarge: GoogleFonts.poppins(
           fontSize: 12.sp,
           fontWeight: FontWeight.w400,
           color: _colorSchemeLight.onBackground,
         ),
-        bodyMedium: TextStyle(
+        bodyMedium: GoogleFonts.poppins(
           fontSize: 16.sp,
           fontWeight: FontWeight.w400,
           color: _colorSchemeLight.onBackground,
         ),
-        titleMedium: TextStyle(
+        titleMedium: GoogleFonts.poppins(
           fontSize: 12.sp,
           fontWeight: FontWeight.w500,
           color: _colorSchemeLight.onBackground,
         ),
-        titleSmall: TextStyle(
+        titleSmall: GoogleFonts.poppins(
           fontSize: 10.sp,
           fontWeight: FontWeight.w500,
           color: _colorSchemeLight.onBackground,
@@ -126,20 +128,26 @@ class AppThemeLight extends AppTheme {
 
   AppBarTheme get _appBarTheme => AppBarTheme(
         backgroundColor: _colorSchemeLight.background,
-        titleTextStyle: _textThemeLight.bodyMedium!.copyWith(color: _colorSchemeLight.onSurface),
+        titleTextStyle: _textThemeLight.bodyMedium!
+            .copyWith(color: _colorSchemeLight.onSurface),
       );
 
   /* Text Field Theme */
 
   InputDecorationTheme get _inputDecorationTheme => InputDecorationTheme(
         focusColor: _colorSchemeLight.secondaryContainer,
-        labelStyle: _textThemeLight.labelLarge!.copyWith(color: _colorSchemeLight.onBackground.withOpacity(0.4)),
-        floatingLabelStyle: _textThemeLight.labelLarge!.copyWith(color: _colorSchemeLight.onBackground.withOpacity(0.4)),
-        hintStyle: _textThemeLight.labelLarge!.copyWith(color: _colorSchemeLight.onBackground.withOpacity(0.3)),
-        helperStyle: _textThemeLight.titleSmall!.copyWith(color: _colorSchemeLight.primary),
+        labelStyle: _textThemeLight.labelLarge!
+            .copyWith(color: _colorSchemeLight.onBackground.withOpacity(0.4)),
+        floatingLabelStyle: _textThemeLight.labelLarge!
+            .copyWith(color: _colorSchemeLight.onBackground.withOpacity(0.4)),
+        hintStyle: _textThemeLight.labelLarge!
+            .copyWith(color: _colorSchemeLight.onBackground.withOpacity(0.3)),
+        helperStyle: _textThemeLight.titleSmall!
+            .copyWith(color: _colorSchemeLight.primary),
         fillColor: _colorSchemeLight.secondaryContainer,
         prefixIconColor: _colorSchemeLight.onBackground.withOpacity(0.4),
-        errorStyle: _textThemeLight.titleSmall!.copyWith(color: _colorSchemeLight.error),
+        errorStyle: _textThemeLight.titleSmall!
+            .copyWith(color: _colorSchemeLight.error),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
           borderSide: BorderSide(color: _colorSchemeLight.error),
@@ -185,7 +193,8 @@ class AppThemeLight extends AppTheme {
         style: OutlinedButton.styleFrom(
           foregroundColor: _colorSchemeLight.onBackground,
           backgroundColor: Colors.transparent,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
           side: BorderSide(width: 2, color: _colorSchemeLight.primary),
           textStyle: _textThemeLight.labelSmall,
         ),

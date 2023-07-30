@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
         path: ApplicationConstants.LANG_ASSET_PATH,
         startLocale: LanguageManager.instance.enLocale,
         child: ScreenUtilInit(
-          designSize: const Size(390, 844),
+          designSize: const Size(393, 852),
           minTextAdapt: true,
           splitScreenMode: true,
           builder: (context, child) => MaterialApp.router(

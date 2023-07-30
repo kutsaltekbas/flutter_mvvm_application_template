@@ -29,6 +29,8 @@ dependencies:
   flutter_form_builder: ^9.1.0
   flutter_svg: ^2.0.5
   form_builder_validators: ^9.0.0
+  google_fonts: ^5.1.0
+  lottie: ^2.5.0
 
 dev_dependencies:
   flutter_test:
@@ -42,3 +44,4 @@ flutter:
   assets:
     - assets/languages/
     - assets/images/
+    - assets/lottie/
